@@ -1,6 +1,6 @@
 ## Description
 
-Custom Dropdown component.
+Custom Dropdown component..
 
 ## Getting Started
 
