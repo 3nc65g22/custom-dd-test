@@ -1,0 +1,50 @@
+{
+  "name": "ui-exam",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "rm dist/ -r && parcel build index.html --no-source-maps --no-cache && serve dist",
+    "serve": "rm dist/ -r && parcel  build index.html --no-source-maps && serve dist",
+    "build:hoist": "rm dist/ -r && parcel build index.html --experimental-scope-hoisting"
+  },
+  "alias": {
+    "components": "./src/components",
+    "data": "./src/data",
+    "assets": "./src/assets"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "clsx": "^1.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/plugin-transform-runtime": "^7.14.2",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2017": "^6.24.1",
+    "eslint": "^7.26.0",
+    "lodash.escaperegexp": "^4.1.2",
+    "node-sass": "^4.12.0",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.26.2"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "es2017"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "regenerator": true
+        }
+      ]
+    ]
+  }
+}
